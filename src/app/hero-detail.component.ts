@@ -9,6 +9,7 @@ import { Hero } from './hero';
                   <div>
                     <span>{{ hero.id }}</span>
                     <span>{{ hero.name }}</span>
+                    <span>球类:{{ hero.char }}</span>
                   </div>
                 </div>`
 })

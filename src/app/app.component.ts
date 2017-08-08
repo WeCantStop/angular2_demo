@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
     <h1>{{title}}</h1>
     <a routerLink="/heros" routerLinkActive="nav-active" class="nav">Get Heros</a>
     &nbsp;
-    <a routerLink="/dashboard" routerLinkActive="nav-active" class="nav">Go to Dashboard</a> 
+    <a routerLink="/dashboard" routerLinkActive="nav-active" class="nav">Go to Dashboard</a>
     <router-outlet></router-outlet>
   `
 })

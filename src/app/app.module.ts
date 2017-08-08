@@ -13,6 +13,7 @@ import { HerosComponent } from './heros.component';
 import { DashBoardComponent } from './dashboard.component';
 
 @NgModule({
+  /**声明视图类 */
   declarations: [
     AppComponent,
     HerosComponent,
@@ -24,7 +25,9 @@ import { DashBoardComponent } from './dashboard.component';
     FormsModule,
     AppRouterModule
   ],
+  /**全局服务列表 */
   providers: [HeroService],
+  /**根模块才能 bootstrap */
   bootstrap: [AppComponent]
 })
 export class AppModule { }

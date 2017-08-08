@@ -2,3 +2,7 @@
     color: skyblue;
     text-decoration: underline;
 }
+
+.selected {
+    color: yellowgreen
+}

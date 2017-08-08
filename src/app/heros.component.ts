@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { Hero } from './hero';
-import { HeroService } from './hero.servics';
+import { HeroService } from './services/hero.servics';
 import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-heros',
-  styleUrls: ['./app.component.css'],
+  styleUrls: ['./styles/heros.component.css'],
   template: `
                 <h3>{{ title }}</h3>
                 <ul>

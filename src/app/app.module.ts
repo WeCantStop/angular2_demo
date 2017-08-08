@@ -1,23 +1,16 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router'
 /** form相关的东西需要引进此模块 **/
 import { FormsModule } from '@angular/forms';
+/** service **/
+import { HeroService } from './services/hero.servics';
+/**router */
+import { AppRouterModule } from './router';
 
 import { AppComponent } from './app.component';
 import { HeroDetailComponent } from './hero-detail.component';
 import { HerosComponent } from './heros.component';
-import { HeroService } from './hero.servics';
 import { DashBoardComponent } from './dashboard.component';
-
-
-const Router = RouterModule.forRoot([
-  { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
-  { path: 'dashboard', component: DashBoardComponent },
-  { path: 'heros', component: HerosComponent },
-  { path: 'heroDetail/:id', component: HeroDetailComponent }
-])
-
 
 @NgModule({
   declarations: [
@@ -29,7 +22,7 @@ const Router = RouterModule.forRoot([
   imports: [
     BrowserModule,
     FormsModule,
-    Router,
+    AppRouterModule
   ],
   providers: [HeroService],
   bootstrap: [AppComponent]

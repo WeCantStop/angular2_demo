@@ -6,3 +6,7 @@
 .selected {
     color: yellowgreen
 }
+
+.hero-item {
+    list-style-type: none;
+}

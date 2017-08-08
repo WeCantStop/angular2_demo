@@ -6,13 +6,11 @@ import { Component } from '@angular/core';
     <h1>{{title}}</h1>
     <a routerLink="/heros">Get Heros</a>
     &nbsp;
-    &nbsp;
-    &nbsp;
     <a routerLink="/dashboard">Go to Dashboard</a> 
     <router-outlet></router-outlet>
   `
 })
 export class AppComponent {
-  title = 'Tour of Heroes';
+  title = 'Tour of Heros';
 }
 

@@ -11,6 +11,7 @@ import { AppComponent } from './app.component';
 import { HeroDetailComponent } from './hero-detail.component';
 import { HerosComponent } from './heros.component';
 import { DashBoardComponent } from './dashboard.component';
+import { HeroRelateComponent } from './hero-relate.component';
 
 @NgModule({
   /**声明视图类 */
@@ -18,7 +19,8 @@ import { DashBoardComponent } from './dashboard.component';
     AppComponent,
     HerosComponent,
     HeroDetailComponent,
-    DashBoardComponent
+    DashBoardComponent,
+    HeroRelateComponent
   ],
   imports: [
     BrowserModule,

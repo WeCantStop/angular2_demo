@@ -5,7 +5,7 @@ import { Hero } from './hero';
 @Component({
     selector: 'app-dashboard',
     styleUrls: ['./styles/dashboard.component.css'],
-    templateUrl: './dashboard.component.html'
+    templateUrl: './template/dashboard.component.html'
 })
 
 // 初始化

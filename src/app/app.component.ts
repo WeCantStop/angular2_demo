@@ -5,13 +5,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./styles/app.component.css'],
   template: `
     <h1>{{title}}</h1>
-    <a routerLink="/heros" routerLinkActive="nav-active" class="nav">Get Heros</a>
+    <a routerLink="/dashboard" routerLinkActive="nav-active" class="nav">所有人物</a>
     &nbsp;
-    <a routerLink="/dashboard" routerLinkActive="nav-active" class="nav">Go to Dashboard</a>
+    <a routerLink="/heros" routerLinkActive="nav-active" class="nav">人物前沿</a>
+    &nbsp;
+    <a routerLink="/heroRelate" routerLinkActive="nav-active" class="nav">人物关系</a>
     <router-outlet></router-outlet>
   `
 })
 export class AppComponent {
-  title = 'Tour of Heros';
+  title = '历史人物';
 }
 

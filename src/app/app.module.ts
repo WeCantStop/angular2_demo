@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+/** 动画类 **/
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 /** form相关的东西需要引进此模块 **/
 import { FormsModule } from '@angular/forms';
 /** service **/
@@ -14,6 +16,7 @@ import { DashBoardComponent } from './dashboard.component';
 import { HeroRelateComponent } from './hero-relate.component';
 import { TestEmitComponent } from './components/test-emit.component';
 import { HeightLightDirective } from './attribute-directives/heightlight';
+import { HeroAnimation } from './hero-animation.component';
 
 /** pipe **/
 import { TestPipe } from './filters/testPipe';
@@ -29,12 +32,14 @@ import { TestPipe } from './filters/testPipe';
     HeroRelateComponent,
     TestEmitComponent,
     HeightLightDirective,
-    TestPipe
+    TestPipe,
+    HeroAnimation
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    AppRouterModule
+    AppRouterModule,
+    BrowserAnimationsModule
   ],
   /**全局服务列表 */
   providers: [HeroService],

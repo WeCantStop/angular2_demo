@@ -2,10 +2,10 @@ import { HeroRelateComponent } from './../hero-relate.component';
 import { HeroDetailComponent } from '../hero-detail.component';
 import { HerosComponent } from '../heros.component';
 import { DashBoardComponent } from '../dashboard.component';
+import { HeroAnimation } from '../hero-animation.component';
 
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AppComponent } from '../app.component';
 
 
 const routes: Routes = [
@@ -13,7 +13,8 @@ const routes: Routes = [
     { path: 'dashboard', component: DashBoardComponent },
     { path: 'heros', component: HerosComponent },
     { path: 'heroDetail/:id', component: HeroDetailComponent },
-    { path: 'heroRelate', component: HeroRelateComponent }
+    { path: 'heroRelate', component: HeroRelateComponent },
+    { path: 'heroAnimation', component: HeroAnimation },
 ];
 
 

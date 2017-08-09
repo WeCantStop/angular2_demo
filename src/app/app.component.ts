@@ -10,6 +10,8 @@ import { Component } from '@angular/core';
     <a routerLink="/heros" routerLinkActive="nav-active" class="nav">人物前沿</a>
     &nbsp;
     <a routerLink="/heroRelate" routerLinkActive="nav-active" class="nav">人物关系</a>
+    &nbsp;
+    <a routerLink="/heroAnimation" routerLinkActive="nav-active" class="nav">人物动画</a>
     <router-outlet></router-outlet>
   `
 })

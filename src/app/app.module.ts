@@ -13,6 +13,8 @@ import { HerosComponent } from './heros.component';
 import { DashBoardComponent } from './dashboard.component';
 import { HeroRelateComponent } from './hero-relate.component';
 import { TestEmitComponent } from './components/test-emit.component';
+import { HeightLightDirective } from './attribute-directives/heightlight';
+
 
 @NgModule({
   /**声明视图类 */
@@ -22,7 +24,8 @@ import { TestEmitComponent } from './components/test-emit.component';
     HeroDetailComponent,
     DashBoardComponent,
     HeroRelateComponent,
-    TestEmitComponent
+    TestEmitComponent,
+    HeightLightDirective
   ],
   imports: [
     BrowserModule,

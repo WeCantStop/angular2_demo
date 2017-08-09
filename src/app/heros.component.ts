@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
   template: `
                 <h3>{{ title }}</h3>
                 <ul>
-                  <li *ngFor="let hero of heros" (click)="onSelectHero(hero)" class="hero-item" [class.selected]="hero === selectedHero">
+                  <li *ngFor="let hero of heros" (click)="onSelectHero(hero)" class="hero-item" [class.selected]="hero === selectedHero" highLight>
                     <span>{{ hero.id }}</span>
                     <span>{{ hero.name }}</span>
                   </li>

@@ -1,6 +1,6 @@
-<h3>人物前言</h3>
+<h3>人物前沿</h3>
 <div class="grid grid-pad">
-  <div *ngFor="let hero of heros" class="col-1-4" [routerLink]="['/heroDetail', hero.id]">
+  <div *ngFor="let hero of heros" highLight highLightColor="yellowgreen" class="col-1-4" [routerLink]="['/heroDetail', hero.id]">
     <div class="module hero">
       <h4>{{hero.name}}</h4>
     </div>

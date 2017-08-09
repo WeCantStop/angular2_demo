@@ -1,0 +1,7 @@
+<div class="hero-relate">
+    <h3>人物关系(这里是用来测试父子间传递的)</h3>
+    <div>1.Son_Name: {{ son.name }}</div>
+    <div>2.Son_Age: {{ son.age }}</div>
+    <!-- 注意接收子组件发过来的事件时候要传入$event -->
+    <app-test [transferByParent]="parentData" (parentListener)="event($event)"></app-test>
+</div>

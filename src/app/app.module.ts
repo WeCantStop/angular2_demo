@@ -12,6 +12,7 @@ import { HeroDetailComponent } from './hero-detail.component';
 import { HerosComponent } from './heros.component';
 import { DashBoardComponent } from './dashboard.component';
 import { HeroRelateComponent } from './hero-relate.component';
+import { TestEmitComponent } from './components/test-emit.component';
 
 @NgModule({
   /**声明视图类 */
@@ -20,7 +21,8 @@ import { HeroRelateComponent } from './hero-relate.component';
     HerosComponent,
     HeroDetailComponent,
     DashBoardComponent,
-    HeroRelateComponent
+    HeroRelateComponent,
+    TestEmitComponent
   ],
   imports: [
     BrowserModule,

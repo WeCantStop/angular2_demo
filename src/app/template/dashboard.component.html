@@ -1,8 +1,11 @@
 <h3>人物前沿</h3>
 <div class="grid grid-pad">
-  <div *ngFor="let hero of heros" highLight highLightColor="yellowgreen" class="col-1-4" [routerLink]="['/heroDetail', hero.id]">
-    <div class="module hero">
-      <h4>{{hero.name}}</h4>
+    <div *ngFor="let hero of heros" highLight highLightColor="yellowgreen" class="col-1-4" [routerLink]="['/heroDetail', hero.id]">
+        <div class="module hero">
+            <h4>{{hero.name}}</h4>
+        </div>
     </div>
-  </div>
+    <h4>管道过滤器测试:</h4>
+    <div>内置过滤器 => {{ time | date:"yyyy-MM-dd hh:mm:ss"}}</div>
+    <div>自定义过滤器 => {{ myName | testPipe: "worlds" }}</div>
 </div>

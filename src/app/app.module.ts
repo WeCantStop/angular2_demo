@@ -15,6 +15,9 @@ import { HeroRelateComponent } from './hero-relate.component';
 import { TestEmitComponent } from './components/test-emit.component';
 import { HeightLightDirective } from './attribute-directives/heightlight';
 
+/** pipe **/
+import { TestPipe } from './filters/testPipe';
+
 
 @NgModule({
   /**声明视图类 */
@@ -25,7 +28,8 @@ import { HeightLightDirective } from './attribute-directives/heightlight';
     DashBoardComponent,
     HeroRelateComponent,
     TestEmitComponent,
-    HeightLightDirective
+    HeightLightDirective,
+    TestPipe
   ],
   imports: [
     BrowserModule,

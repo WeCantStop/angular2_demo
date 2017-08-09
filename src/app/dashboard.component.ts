@@ -11,6 +11,8 @@ import { Hero } from './hero';
 // 初始化
 export class DashBoardComponent implements OnInit {
     heros: Hero[] = [];
+    time = new Date();
+    myName = 'will';
     constructor(private heroService: HeroService) { }
     ngOnInit(): void {
         this.heroService.getHeroes().then(heros => this.heros = heros.slice(0, 4));

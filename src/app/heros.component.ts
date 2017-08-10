@@ -1,7 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostBinding } from '@angular/core';
 import { Hero } from './hero';
 import { HeroService } from './services/hero.servics';
 import { Router } from '@angular/router';
+
+import slideInDownAnimation from './animation';
 
 @Component({
   selector: 'app-heros',
@@ -16,9 +18,13 @@ import { Router } from '@angular/router';
                 </ul>
                 <app-hero-detail [hero]="selectedHero"></app-hero-detail>
                 `,
+    animations: [ slideInDownAnimation.slideInDownAnimation ]
 })
 
 export class HerosComponent implements OnInit {
+    @HostBinding('@routeAnimation') routeAnimation = true;
+    @HostBinding('style.display')   display = 'block';
+    @HostBinding('style.position')  position = 'absolute';
   title = '所有人物';
   heros: Hero[];
   selectedHero: Hero;

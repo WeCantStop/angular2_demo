@@ -1,6 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostBinding } from '@angular/core';
 import { HeroService } from './services/hero.servics';
 import { Hero } from './hero';
+
+import slideInDownAnimation from './animation';
 /** 引入动画相关的类 **/
 import {
     trigger,
@@ -27,12 +29,16 @@ import {
             })),
             transition('inactive => active', animate('100ms ease-in')),
             transition('active => inactive', animate('100ms ease-out'))
-        ])
+        ]),
+        slideInDownAnimation.slideInDownAnimation
     ]
 })
 
 // 初始化
 export class DashBoardComponent implements OnInit {
+    @HostBinding('@routeAnimation') routeAnimation = true;
+    @HostBinding('style.display')   display = 'block';
+    @HostBinding('style.position')  position = 'absolute';
     heros: Hero[] = [];
     time = new Date();
     myName = 'will';

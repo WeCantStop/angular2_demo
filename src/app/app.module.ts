@@ -9,6 +9,9 @@ import { HeroService } from './services/hero.servics';
 /**router */
 import { AppRouterModule } from './router';
 
+/** http **/
+import { HttpClientModule } from '@angular/common/http';
+
 import { AppComponent } from './app.component';
 import { HeroDetailComponent } from './hero-detail.component';
 import { HerosComponent } from './heros.component';
@@ -18,6 +21,7 @@ import { TestEmitComponent } from './components/test-emit.component';
 import { HeightLightDirective } from './attribute-directives/heightlight';
 import { HeroAnimation } from './hero-animation.component';
 import { HeroSwiper } from './hero-swiper.component';
+import { HeroHttpComponent } from './hero-http.component';
 
 /** pipe **/
 import { TestPipe } from './filters/testPipe';
@@ -35,13 +39,15 @@ import { TestPipe } from './filters/testPipe';
     HeightLightDirective,
     TestPipe,
     HeroAnimation,
-    HeroSwiper
+    HeroSwiper,
+    HeroHttpComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     AppRouterModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule
   ],
   /**全局服务列表 */
   providers: [HeroService],

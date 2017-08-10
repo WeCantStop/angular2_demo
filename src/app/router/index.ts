@@ -4,6 +4,7 @@ import { HerosComponent } from '../heros.component';
 import { DashBoardComponent } from '../dashboard.component';
 import { HeroAnimation } from '../hero-animation.component';
 import { HeroSwiper } from '../hero-swiper.component';
+import { HeroHttpComponent } from '../hero-http.component';
 
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -17,6 +18,7 @@ const routes: Routes = [
     { path: 'heroRelate', component: HeroRelateComponent },
     { path: 'heroAnimation', component: HeroAnimation },
     { path: 'heroSwiper', component: HeroSwiper },
+    { path: 'heroHttp', component: HeroHttpComponent },
 ];
 
 

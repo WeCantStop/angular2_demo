@@ -1,0 +1,25 @@
+<!-- app/app.component.html -->
+<div>
+    <h4>Swipe Avatars with HammerJS</h4>
+    <!-- loop each avatar in our avatar list -->
+    <div class="swipe-box" *ngFor="let avatar of avatars; let idx=index" (swipeleft)="swipe(idx, $event.type)" (swiperight)="swipe(idx, $event.type)" [class.visible]="avatar.visible" [class.hidden]="!avatar.visible">
+        <div>
+            <img [src]="avatar.image" [alt]="avatar.name">
+        </div>
+        <div>
+            <a class="header">{{avatar.name}}</a>
+        </div>
+    </div>
+
+    <div class="test">
+        <button (tap)="testTap()">Test for tap</button>
+    </div>
+
+    <div class="test-for-swipper" (Swipeleft)="swipperLeft()">
+        Test for Swipper left
+    </div>
+
+    <div class="test-for-swipper" (Swiperight)="swipperRight()">
+        Test for Swipper right
+    </div>
+</div>

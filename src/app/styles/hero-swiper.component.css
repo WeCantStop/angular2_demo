@@ -1,0 +1,24 @@
+.swipe-box {
+    display: block;
+    width: 100%;
+    float: left;
+    margin: 0;
+}
+
+.visible {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+.swipe-box img {
+    width: 100%;
+}
+
+.test-for-swipper {
+    width: 200px;
+    height: 200px;
+    background-color: skyblue;margin-top: 20px;
+}

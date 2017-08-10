@@ -17,6 +17,7 @@ import { HeroRelateComponent } from './hero-relate.component';
 import { TestEmitComponent } from './components/test-emit.component';
 import { HeightLightDirective } from './attribute-directives/heightlight';
 import { HeroAnimation } from './hero-animation.component';
+import { HeroSwiper } from './hero-swiper.component';
 
 /** pipe **/
 import { TestPipe } from './filters/testPipe';
@@ -33,7 +34,8 @@ import { TestPipe } from './filters/testPipe';
     TestEmitComponent,
     HeightLightDirective,
     TestPipe,
-    HeroAnimation
+    HeroAnimation,
+    HeroSwiper
   ],
   imports: [
     BrowserModule,

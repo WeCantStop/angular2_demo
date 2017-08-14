@@ -1,4 +1,3 @@
-/** 定义动画所需要的模块 **/
 import { animate, state, style, transition, trigger } from '@angular/core';
 
 // Component transition animations
